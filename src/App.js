@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   async handleChange(event) {
-    const { name, value, type, checked } = event.target;
+    const { name, value, type} = event.target;
     if (type === "checkbox") {
       if (this.state.filters.includes(value)) {
         this.state.filters = this.state.filters.filter(f => f !== value);
@@ -48,9 +48,18 @@ class App extends Component {
   render() {
     return (
       <form>
-        <h1>Please fill out then submit, then press go</h1>
-        <br />
 
+        <h1>
+        <img className = "logo"  alt = "logo" src={"logo192.png"}  width = "50" height = "50"/> 
+        <text className = "title">Book a Minder</text>
+        </h1>
+        <h2 className = "press">
+        <button class="button">Green</button>
+        <button class="button button2">Blue</button>
+        <button class="button button3">Red</button>
+        <button class="button button4">Gray</button>
+        <button class="button button5">Black</button>
+        </h2>
         <h2>Filters</h2>
         <label>
           <input
@@ -151,6 +160,7 @@ class App extends Component {
         </label>
 
         <br />
+        <br />
         <label>Category: </label>
         <select
           value={this.state.pub_category}
@@ -167,17 +177,15 @@ class App extends Component {
           <option value="maternity_nurse">maternity_nurse</option>
         </select>
 
-        <h2> Your current location is {this.state.url}</h2>
-        <h2>Your current category is {this.state.pub_category}</h2>
-        <h2>Your current filter is {this.state.pub_filters}</h2>
-        <h2>Your current link is {this.state.queryString}</h2>
+        <br />
         <br />
         <a
+          className = "submit"
           href={`https://oogo.herokuapp.com/s?${this.state.queryString}`}
           target="_blank"
           rel="noopener noreferrer"
         >
-          go
+          Submit
         </a>
       </form>
     );
