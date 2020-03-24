@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import Popup from "reactjs-popup";
 
 class App extends Component {
   constructor() {
@@ -47,6 +48,10 @@ class App extends Component {
 
   render() {
     return (
+      <Popup trigger={<button className="button"> Book Minder </button>}
+      modal
+      closeOnDocumentClick>
+      <div>
       <form>
 
         <h1>
@@ -179,6 +184,7 @@ class App extends Component {
 
         <br />
         <br />
+        
         <a
           className = "submit"
           href={`https://oogo.herokuapp.com/s?${this.state.queryString}`}
@@ -188,6 +194,8 @@ class App extends Component {
           Submit
         </a>
       </form>
+      </div>
+      </Popup>
     );
   }
 }
