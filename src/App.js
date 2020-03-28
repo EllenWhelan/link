@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./App.css";
-import Popup from "reactjs-popup";
 
 class App extends Component {
   constructor() {
@@ -48,9 +47,8 @@ class App extends Component {
 
   render() {
     return (
-      <Popup trigger={<button className="button"> Book Minder </button>}
-      modal
-      closeOnDocumentClick>
+      
+      
       <div>
       <form>
 
@@ -195,7 +193,8 @@ class App extends Component {
         </a>
       </form>
       </div>
-      </Popup>
+      
+      
     );
   }
 }
