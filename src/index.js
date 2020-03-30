@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Hotel from './Hotel';
+import App from './App';
 
-
-
-ReactDOM.render(<Hotel />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 

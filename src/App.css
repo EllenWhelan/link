@@ -1,4 +1,20 @@
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+/*
 h1 {
   color: rgb(247, 243, 243);
   background-color:rgb(3, 83, 94);
@@ -18,7 +34,7 @@ text.logo
 }
 
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50; 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -31,10 +47,10 @@ text.logo
   
 }
 
-.button2 {background-color: #008CBA;} /* Blue */
-.button3 {background-color: #f44336;} /* Red */ 
-.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
-.button5 {background-color: #555555;} /* Black */
+.button2 {background-color: #008CBA;} 
+.button3 {background-color: #f44336;}
+.button4 {background-color: #e7e7e7; color: black;}
+.button5 {background-color: #555555;} 
 
 
 img.logo{
@@ -43,3 +59,4 @@ img.logo{
   text-align:left
 }
 
+*/
