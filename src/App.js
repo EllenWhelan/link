@@ -51,17 +51,15 @@ class App extends Component {
       <form>
 
         <h1>
-        <img className = "logo"  alt = "logo" src={"logo192.png"}  width = "50" height = "50"/> 
-        <text className = "title">Book a Minder</text>
+        <img className = "logo"  alt = "logo" src={"logo192.png"}  width = "220" height = "80"/> 
+        
         </h1>
-        <h2 className = "press">
-        <button class="button">Green</button>
-        <button class="button button2">Blue</button>
-        <button class="button button3">Red</button>
-        <button class="button button4">Gray</button>
-        <button class="button button5">Black</button>
+        <text className = "title">Book a Minder</text>
+      
+        <h2>
+        <text className= "filterHead">Filters</text>
         </h2>
-        <h2>Filters</h2>
+      <div id= "filters">
         <label>
           <input
             type="checkbox"
@@ -159,10 +157,13 @@ class App extends Component {
           />{" "}
           All day
         </label>
+       </div>
 
         <br />
         <br />
-        <label>Category: </label>
+        
+        <label >Category:  </label>
+        
         <select
           value={this.state.pub_category}
           defaultValue={{ label: "Select Dept", value: 0 }}
@@ -181,6 +182,8 @@ class App extends Component {
         <br />
         <br />
         
+        <div id="container">
+        <button class="button">Cancel</button>
         <a
           className = "submit"
           href={`https://oogo.herokuapp.com/s?${this.state.queryString}`}
@@ -189,6 +192,7 @@ class App extends Component {
         >
           Submit
         </a>
+        </div>
       </form>
       </div>
 
