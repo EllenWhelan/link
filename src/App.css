@@ -1,7 +1,6 @@
-
+/*
 h1 {
   color: rgb(247, 243, 243);
- /* background-color:rgb(62, 184, 170); */
   font-family: Arial, Helvetica, sans-serif;
   position: static;
   bottom: 20px;
@@ -10,7 +9,6 @@ h1 {
 }
 h2{
   color: rgb(247, 243, 243);
-  /* background-color:rgb(62, 184, 170); */
    font-family: Arial, Helvetica, sans-serif;
    position: static;
    bottom: 20px;
@@ -44,7 +42,7 @@ text.logo
 }
 
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50; 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -60,7 +58,7 @@ text.logo
   color: blue
 }
 .submit{
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50; 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -71,6 +69,117 @@ text.logo
   margin: 4px 2px;
   cursor: pointer;
 }
+*/
 
 
+.popup-container {
+  display: block;
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
 
+.popup-title {
+  text-align: center;
+  font-size: 3em;
+  color: rgb(71, 181, 170);
+  cursor: default;
+  user-select: none;
+}
+
+.popup-subtitle {
+  text-align: start;
+  margin: 10px;
+}
+
+.oogo-form {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.oogo-form input[type="checkbox"] {
+  display: none;
+}
+
+.oogo-form input[type="checkbox"] + label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.oogo-form input[type="checkbox"] + label::before {
+  content: "\2714";
+  color: white;
+  border: 0.1em solid black;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  padding: 0 1.1em 1.5em 0.5em;
+  margin: 0.2em;
+  transition: 0.2s;
+}
+
+.oogo-form input[type="checkbox"] + label:active::before {
+  transform: scale(0);
+}
+
+.oogo-form input[type="checkbox"]:checked + label::before {
+  background: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.oogo-form .select-container {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3em;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 5px solid #4CAF50;
+  margin: 10px 0;
+}
+
+.oogo-form select {
+  appearance: none;
+  outline: 0;
+  flex: 1;
+  padding: 0 0.5em;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.oogo-form .select-container::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.oogo-form .button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.oogo-form .submit-button {
+  text-decoration: none;
+  padding:15px 30px;
+  background: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  margin: 0 50px;
+  transition: background-color .6s;
+}
+
+.oogo-form .submit-button:hover {
+  background: rgb(122, 199, 124);
+}
