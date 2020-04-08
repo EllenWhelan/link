@@ -13,8 +13,25 @@ class App extends Component {
             url: window.location.href,
         };
         this.handleChange = this.handleChange.bind(this);
+		//this.handleClick = this.handleClick.bind(this);
     }
 
+	  /*async handleClick(e){
+
+		const {
+			 REACT_APP_EMAILJS_RECEIVER: receiverEmail,
+			 REACT_APP_EMAILJS_TEMPLATEID: template,
+			 REACT_APP_EMAILJS_USERID: user
+		   } = this.props.env
+
+		   Form.mailTime(
+			 template,
+			 this.props.senderEmail,
+			 receiverEmail,
+			 this.state.feedback,
+			 user
+		   );
+     }*/
     async handleChange(event) {
         const { name, value, type } = event.target;
         if (type === "checkbox") {
@@ -178,6 +195,18 @@ class App extends Component {
                             </option>
                         </select>
                     </div>
+					<br />
+					<br />
+					
+					<label>
+					Please enter your booking number:
+					</label>
+					<br />
+					  <input
+						type="text"
+						value={this.state.value}
+						onChange={this.handleChange}
+					/>
 
                     <div className='button-container'>
                         <button className='submit-button' >
@@ -188,6 +217,7 @@ class App extends Component {
                             href={`https://oogo.herokuapp.com/s?${this.state.queryString}`}
                             target='_blank'
                             rel='noopener noreferrer'
+							onClick = {this.handleClick}
                         >
                             Submit
                         </a>
