@@ -60,102 +60,104 @@ class App extends Component {
                 <h1 className='popup-title'>Book a Minder</h1>
                 <h2 className='popup-subtitle'>Filters: </h2>
                 <div className='oogo-form'>
-                    <div>
-                        <input
-                            type='checkbox'
-                            id='nb'
-                            name='pub_filters'
-                            value='new_borns'
-                            onChange={this.handleChange}
-                        />
-                        <label htmlFor='nb'>New Borns</label>
-                    </div>
+                    <div className='checkbox-column'>
+                        <div>
+                            <input
+                                type='checkbox'
+                                id='nb'
+                                name='pub_filters'
+                                value='new_borns'
+                                onChange={this.handleChange}
+                            />
+                            <label htmlFor='nb'>New Borns</label>
+                        </div>
 
-                    <div>
-                        <input
-                            type='checkbox'
-                            id='ns'
-                            name='pub_filters'
-                            value='non_smoker'
-                            onChange={this.handleChange}
-                        />
-                        <label htmlFor='ns'>None Smoker</label>
-                    </div>
+                        <div>
+                            <input
+                                type='checkbox'
+                                id='ns'
+                                name='pub_filters'
+                                value='non_smoker'
+                                onChange={this.handleChange}
+                            />
+                            <label htmlFor='ns'>None Smoker</label>
+                        </div>
 
-                    <div>
-                        <input
-                            type='checkbox'
-                            id='fa'
-                            name='pub_filters'
-                            value='first_aid'
-                            onChange={this.handleChange}
-                        />
-                        <label htmlFor='fa'>First Aid</label>
-                    </div>
-                    <div>
-                        <input
-                            type='checkbox'
-                            id='ot'
-                            name='pub_filters'
-                            value='own_transport'
-                            onChange={this.handleChange}
-                        />
-                        <label htmlFor='ot'>Own Transport</label>
-                    </div>
+                        <div>
+                            <input
+                                type='checkbox'
+                                id='fa'
+                                name='pub_filters'
+                                value='first_aid'
+                                onChange={this.handleChange}
+                            />
+                            <label htmlFor='fa'>First Aid</label>
+                        </div>
+                        <div>
+                            <input
+                                type='checkbox'
+                                id='ot'
+                                name='pub_filters'
+                                value='own_transport'
+                                onChange={this.handleChange}
+                            />
+                            <label htmlFor='ot'>Own Transport</label>
+                        </div>
 
-                    <div>
-                        <input
-                            type='checkbox'
-                            id='q'
-                            name='pub_filters'
-                            value='qualifications'
-                            onChange={this.handleChange}
-                        />
-                        <label htmlFor='q'>Qualifications</label>
-                    </div>
+                        <div>
+                            <input
+                                type='checkbox'
+                                id='q'
+                                name='pub_filters'
+                                value='qualifications'
+                                onChange={this.handleChange}
+                            />
+                            <label htmlFor='q'>Qualifications</label>
+                        </div>
 
-                    <div>
-                        <input
-                            type='checkbox'
-                            id='ov'
-                            name='pub_filters'
-                            value='overnights'
-                            onChange={this.handleChange}
-                        />
-                        <label htmlFor='ov'>Overnights</label>
-                    </div>
+                        <div>
+                            <input
+                                type='checkbox'
+                                id='ov'
+                                name='pub_filters'
+                                value='overnights'
+                                onChange={this.handleChange}
+                            />
+                            <label htmlFor='ov'>Overnights</label>
+                        </div>
 
-                    <div>
-                        <input
-                            type='checkbox'
-                            id='ev'
-                            name='pub_filters'
-                            value='evenings'
-                            onChange={this.handleChange}
-                        />
-                        <label htmlFor='ev'>Evenings</label>
-                    </div>
+                        <div>
+                            <input
+                                type='checkbox'
+                                id='ev'
+                                name='pub_filters'
+                                value='evenings'
+                                onChange={this.handleChange}
+                            />
+                            <label htmlFor='ev'>Evenings</label>
+                        </div>
 
-                    <div>
-                        <input
-                            type='checkbox'
-                            id='mr'
-                            name='pub_filters'
-                            value='mornings'
-                            onChange={this.handleChange}
-                        />
-                        <label htmlFor='mr'>Mornings</label>
-                    </div>
+                        <div>
+                            <input
+                                type='checkbox'
+                                id='mr'
+                                name='pub_filters'
+                                value='mornings'
+                                onChange={this.handleChange}
+                            />
+                            <label htmlFor='mr'>Mornings</label>
+                        </div>
 
-                    <div>
-                        <input
-                            type='checkbox'
-                            id='ad'
-                            name='pub_filters'
-                            value='all_day'
-                            onChange={this.handleChange}
-                        />
-                        <label htmlFor='ad'>All Day</label>
+                        <div>
+                            <input
+                                type='checkbox'
+                                id='ad'
+                                name='pub_filters'
+                                value='all_day'
+                                onChange={this.handleChange}
+                            />
+                            <label htmlFor='ad'>All Day</label>
+                        </div>
                     </div>
 
                     <h2 className='popup-subtitle'>Category: </h2>
@@ -180,9 +182,7 @@ class App extends Component {
                     </div>
 
                     <div className='button-container'>
-                        <button className='submit-button' >
-                            Cancel
-                        </button>
+                        <button className='submit-button'>Cancel</button>
                         <a
                             className='submit-button'
                             href={`https://oogo.herokuapp.com/s?${this.state.queryString}`}
