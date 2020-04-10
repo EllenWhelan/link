@@ -2,17 +2,12 @@ import React, { Component } from "react";
 import Popup from "reactjs-popup";
 import App from './App';
 import './App.css';
-import './css/_about.css';
-import './css/_about.css.map';
 import './css/bootstrap.css';
 import './css/style.css.map';
 import './css/font-awesome.min.css';
 import './css/responsive.css';
 import './css/style.css';
-import './css/breadcrumb.css';
-import './css/breadcrumb.css.map';
-import './css/_price.css';
-import './css/_price.css.map';
+
 
 
 
