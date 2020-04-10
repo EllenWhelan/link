@@ -110,30 +110,23 @@ class Hotel extends Component {
 						<h2>
 							Thank You For Booking With Us
 						</h2>
-						<div className="bottom_part">
+						<div >
 							<p>
 								We see you have children who will be staying with you. Do you wish to 
                                 book a child-minder? Click below if so
 							</p>
-							
 						</div>
 						
-                        <br/>
 						<div>
 					
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="row justify-content-center">
-				<div className="col-lg-10">
-					
-				</div>
-			</div>
 		</div>
 	
 	
-	<section className="">
+	<section>
 		<div className="container">
 			<div className="testi-slider owl-carousel" data-slider-id="1">
 				<div className="item">

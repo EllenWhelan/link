@@ -252,8 +252,15 @@ label {
     margin-bottom: .5rem
 }
 
-button {
-    border-radius: 0
+button.button {
+    border-radius: 0;
+    background-color: rgba(0, 123, 255, .5);
+    color: #fff;
+    height: 100px;
+    width: 300px;
+    font-size: 50px
+	
+	
 }
 
 button:focus {
