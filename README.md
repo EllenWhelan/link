@@ -1,3 +1,14 @@
+# Sweng Group Project - Hotel Hook
+This project was completed as part of a Software Engineering Group Project. This repository contains hotel hook feature that allows a hotel guest to make a booking for childcare during their hotel stay, during the hotel booking process. This is done by a form pop up that redirects to the oogo website. Here the guest can make their childcare booking. 
+The luxury-hotel branch of this repository contains the system for another type of hotel, that makes the childcare booking for the guest on behalf of the guest based on the input values on a pop up form. This implementation sends an automated email to the hotel staff to inform them they must make the booking. 
+
+The repository containing the first part of this project can be found [here](https://github.com/EllenWhelan/flex-template-web).
+
+The oogo website can be found [here](https://oogo.herokuapp.com/).
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -43,26 +54,3 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
