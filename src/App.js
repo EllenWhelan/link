@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 class App extends Component {
     constructor() {
         super();
         this.state = {
+            startDateStart: new Date(),
+            startDateEnd: new Date(2100,4,11),
             location: window.location.href.substr(23),
             filters: [],
             pub_filters: "",
@@ -13,7 +17,21 @@ class App extends Component {
             url: window.location.href,
         };
         this.handleChange = this.handleChange.bind(this);
+        this.handleChangeDateStart = this.handleChangeDateStart.bind(this);
+        this.handleChangeDateEnd = this.handleChangeDateEnd.bind(this);
     }
+
+    handleChangeDateStart = date => {
+        this.setState({
+          startDateStart: date
+        });
+      };
+
+      handleChangeDateEnd = date => {
+        this.setState({
+          startDateEnd: date
+        });
+      };
 
     async handleChange(event) {
         const { name, value, type } = event.target;
@@ -181,11 +199,17 @@ class App extends Component {
                         </select>
                     </div>
 
+                    <DatePicker selected={this.state.startDateStart} onChange={this.handleChangeDateStart}/>
+                    <DatePicker selected={this.state.startDateEnd} onChange={this.handleChangeDateEnd}/>
+
+
                     <div className='button-container'>
                         <button className='submit-button'>Cancel</button>
                         <a
                             className='submit-button'
-                            href={`https://oogo.herokuapp.com/s?${this.state.queryString}`}
+                            href={`https://oogo.herokuapp.com/s?${this.state.queryString + '&dates=' 
+                            + this.state.startDateStart.toISOString().slice(0,10) + '%2C' + 
+                            this.state.startDateEnd.toISOString().slice(0,10)}`}
                             target='_blank'
                             rel='noopener noreferrer'
                         >

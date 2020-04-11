@@ -8,19 +8,12 @@ import './css/font-awesome.min.css';
 import './css/responsive.css';
 import './css/style.css';
 
-
-
-
-
-
 class Hotel extends Component {
     render()
     {
         return(
-            <div>
-            
-            
-	<header className="header_area">
+<div>
+    <header className="header_area">
 		<div className="top_menu row m0">
 			<div className="container">
 				<div className="float-left">
@@ -113,7 +106,7 @@ class Hotel extends Component {
 						<div >
 							<p>
 								We see you have children who will be staying with you. Do you wish to 
-                                book a child-minder? Click below if so
+                                book a child-minder? Click the button below if so
 							</p>
 						</div>
 						
@@ -227,7 +220,7 @@ class Hotel extends Component {
 			<div className="row">
 				<div className="col-lg-3  col-md-6 col-sm-6">
 					<div className="single-footer-widget">
-						<h6>About Agency</h6>
+						<h6>About Us</h6>
 						<p>
 							The world has become so fasted that people don’t want to standby reading page of info they would much rather
 							look at a presentation and understand message.
@@ -259,7 +252,7 @@ class Hotel extends Component {
 				<div className="col-lg-3  col-md-6 col-sm-6">
 					<div className="single-footer-widget">
 						<h6>Newsletter</h6>
-						<p>For business professionals caught between high OEM price mediocre print and graphic.</p>
+						<p>Suscribe to our weekly newspaper by entering your email below</p>
 						<div className="" id="mc_embed_signup">
 
 							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
@@ -294,25 +287,7 @@ class Hotel extends Component {
 		</div>
 	</footer>
 	
-	<script src="js/jquery.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-	<script src="vendors/lightbox/simpleLightbox.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope.pkgd.min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="js/owl-carousel-thumb.min.js"></script>
-	<script src="vendors/popup/jquery.magnific-popup.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-	<script src="vendors/counter-up/jquery.counterup.js"></script>
-	<script src="js/mail-script.js"></script>
-	<script src="js/theme.js"></script>
-            </div>
+</div>
         );
 
     }
