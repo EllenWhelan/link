@@ -3,12 +3,15 @@ import "./App.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
+var today = new Date();
+
 class App extends Component {
     constructor() {
         super();
         this.state = {
             startDateStart: new Date(),
-            startDateEnd: new Date(2100,4,11),
+            startDateEnd: new Date(today.getFullYear(), today.getMonth(), 
+                          today.getDate()+7),
             location: window.location.href.substr(23),
             filters: [],
             pub_filters: "",
