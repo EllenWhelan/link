@@ -10,8 +10,11 @@ class App extends Component {
         super();
         this.state = {
             startDateStart: new Date(),
-            startDateEnd: new Date(today.getFullYear(), today.getMonth(), 
-                          today.getDate()+7),
+            startDateEnd: new Date(
+                today.getFullYear(),
+                today.getMonth(),
+                today.getDate() + 7
+            ),
             location: window.location.href.substr(23),
             filters: [],
             pub_filters: "",
@@ -24,17 +27,23 @@ class App extends Component {
         this.handleChangeDateEnd = this.handleChangeDateEnd.bind(this);
     }
 
-    handleChangeDateStart = date => {
-        this.setState({
-          startDateStart: date
-        });
-      };
+    handleChangeDateStart = (date) => {
+        this.setState(
+            {
+                startDateStart: date,
+            },
+            () => this.updateQueryString()
+        );
+    };
 
-      handleChangeDateEnd = date => {
-        this.setState({
-          startDateEnd: date
-        });
-      };
+    handleChangeDateEnd = (date) => {
+        this.setState(
+            {
+                startDateEnd: date,
+            },
+            () => this.updateQueryString()
+        );
+    };
 
     async handleChange(event) {
         const { name, value, type } = event.target;
@@ -62,7 +71,12 @@ class App extends Component {
         if (this.state.pub_category.length !== 0)
             queryString += `pub_category=${this.state.pub_category}&`;
         if (this.state.pub_filters.length !== 0)
-            queryString += `pub_filters=${this.state.pub_filters}`;
+            queryString += `pub_filters=${this.state.pub_filters}&`;
+        queryString += `dates=${this.state.startDateStart
+            .toISOString()
+            .slice(0, 10)}%2C${this.state.startDateEnd
+            .toISOString()
+            .slice(0, 10)}`;
         this.setState({
             queryString: queryString,
         });
@@ -202,22 +216,25 @@ class App extends Component {
                         </select>
                     </div>
 
-                    <br/>
+                    <br />
                     <h2 className='popup-subtitle'>Date: </h2>
-                    <br/>
-                    <h3 style = {{color:'purple'}}>From:</h3>
-                    <DatePicker selected={this.state.startDateStart} onChange={this.handleChangeDateStart}/>
-                    <h3 style = {{color:'purple'}}>To:</h3>
-                    <DatePicker selected={this.state.startDateEnd} onChange={this.handleChangeDateEnd}/>
-
+                    <br />
+                    <h3 style={{ color: "purple" }}>From:</h3>
+                    <DatePicker
+                        selected={this.state.startDateStart}
+                        onChange={this.handleChangeDateStart}
+                    />
+                    <h3 style={{ color: "purple" }}>To:</h3>
+                    <DatePicker
+                        selected={this.state.startDateEnd}
+                        onChange={this.handleChangeDateEnd}
+                    />
 
                     <div className='button-container'>
                         <button className='submit-button'>Cancel</button>
                         <a
                             className='submit-button'
-                            href={`https://oogo.herokuapp.com/s?${this.state.queryString + '&dates=' 
-                            + this.state.startDateStart.toISOString().slice(0,10) + '%2C' + 
-                            this.state.startDateEnd.toISOString().slice(0,10)}`}
+                            href={`https://oogo.herokuapp.com/s?${this.state.queryString}`}
                             target='_blank'
                             rel='noopener noreferrer'
                         >
