@@ -199,7 +199,12 @@ class App extends Component {
                         </select>
                     </div>
 
+                    <br/>
+                    <h2 className='popup-subtitle'>Date: </h2>
+                    <br/>
+                    <h3 style = {{color:'purple'}}>From:</h3>
                     <DatePicker selected={this.state.startDateStart} onChange={this.handleChangeDateStart}/>
+                    <h3 style = {{color:'purple'}}>To:</h3>
                     <DatePicker selected={this.state.startDateEnd} onChange={this.handleChangeDateEnd}/>
 
 
