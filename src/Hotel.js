@@ -1,3 +1,9 @@
+/* This file contains the code for the structure of the fake hotel site. Based on the design of 
+actual hotel sites, it is used to demonstrate how the popup would function by placing a button on the
+page which would trigger the popup if the user presses it. Here the user fills in the details needed
+for their booking and presses submit. Here , they are redirected to the  official oogo search page.
+Note: the user may need an oogo account to access the oogo search page.  */
+
 import React, { Component } from "react";
 import Popup from "reactjs-popup";
 import App from './App';
