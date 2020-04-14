@@ -148,7 +148,7 @@ class Hotel extends Component {
 				</div>
 				<div className="item">
 					<div className="testi-item">
-						<h4>Fanny Spencer</h4>
+						<h4>Ciaran Layton</h4>
 						<ul className="list">
 							<li><a href="#"><i className="fa fa-star"></i></a></li>
 							<li><a href="#"><i className="fa fa-star"></i></a></li>
@@ -167,7 +167,7 @@ class Hotel extends Component {
 				</div>
 				<div className="item">
 					<div className="testi-item">
-						<h4>Fanny Spencer</h4>
+						<h4>Harry Hugo</h4>
 						<ul className="list">
 							<li><a href="#"><i className="fa fa-star"></i></a></li>
 							<li><a href="#"><i className="fa fa-star"></i></a></li>
@@ -252,7 +252,7 @@ class Hotel extends Component {
 				<div className="col-lg-3  col-md-6 col-sm-6">
 					<div className="single-footer-widget">
 						<h6>Newsletter</h6>
-						<p>Suscribe to our weekly newspaper by entering your email below</p>
+						<p>Subscribe to our weekly newspaper by entering your email below</p>
 						<div className="" id="mc_embed_signup">
 
 							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
