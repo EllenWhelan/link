@@ -18,7 +18,7 @@ class Hotel extends Component {
 			<div className="container">
 				<div className="float-left">
 					<ul className="list header_social">
-						<li><a href="#">Contact Us +11 (111) 1111111</a></li>
+						<li><a href=" ">Contact Us +11 (111) 1111111</a></li>
 					</ul>
 				</div>
 				<div className="float-right">
@@ -54,7 +54,7 @@ class Hotel extends Component {
 							<li className="nav-item active"><a className="nav-link" href="about-us.html">Booking</a></li>
 							<li className="nav-item"><a className="nav-link" href="gallery.html">Gallery</a></li>
 							<li className="nav-item submenu dropdown">
-								<a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								<a href=" " className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Pages</a>
 								<ul className="dropdown-menu">
 									<li className="nav-item"><a className="nav-link" href="elements.html">Elements</a></li>
@@ -62,7 +62,7 @@ class Hotel extends Component {
 								</ul>
 							</li>
 							<li className="nav-item submenu dropdown">
-								<a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								<a href=" " className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Blog</a>
 								<ul className="dropdown-menu">
 									<li className="nav-item"><a className="nav-link" href="blog.html">Blog</a></li>
@@ -131,11 +131,11 @@ class Hotel extends Component {
                         </Popup>
 						<h4>Fanny Spencer</h4>
 						<ul className="list">
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
 						</ul>
 						<div className="wow fadeIn" data-wow-duration="1s">
 							<p>
@@ -150,11 +150,11 @@ class Hotel extends Component {
 					<div className="testi-item">
 						<h4>Ciaran Layton</h4>
 						<ul className="list">
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
 						</ul>
 						<div className="wow fadeIn" data-wow-duration="1s">
 							<p>
@@ -169,11 +169,11 @@ class Hotel extends Component {
 					<div className="testi-item">
 						<h4>Harry Hugo</h4>
 						<ul className="list">
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
 						</ul>
 						<div className="wow fadeIn" data-wow-duration="1s">
 							<p>
@@ -232,18 +232,18 @@ class Hotel extends Component {
 						<h6>Quick Links</h6>
 						<div className="row">
 							<ul className="col footer-nav">
-								<li><a href="#">Sitemaps</a></li>
-								<li><a href="#">Categories</a></li>
-								<li><a href="#">Archives</a></li>
-								<li><a href="#">Advertise</a></li>
-								<li><a href="#">Ad Choice</a></li>
+								<li><a href=" ">Sitemaps</a></li>
+								<li><a href=" ">Categories</a></li>
+								<li><a href=" ">Archives</a></li>
+								<li><a href=" ">Advertise</a></li>
+								<li><a href=" ">Ad Choice</a></li>
 							</ul>
 							<ul className="col footer-nav">
-								<li><a href="#">Privacy Policy</a></li>
-								<li><a href="#">Terms of Use</a></li>
-								<li><a href="#">Help Center</a></li>
-								<li><a href="#">Newsletters</a></li>
-								<li><a href="#">Feedback</a></li>
+								<li><a href=" ">Privacy Policy</a></li>
+								<li><a href=" ">Terms of Use</a></li>
+								<li><a href=" ">Help Center</a></li>
+								<li><a href=" ">Newsletters</a></li>
+								<li><a href=" ">Feedback</a></li>
 							</ul>
 						</div>
 					</div>

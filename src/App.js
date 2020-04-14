@@ -1,3 +1,7 @@
+/* This javascript file contains the code used for the oogo hotel popup. A partnering hotel would place 
+this on their website in the form of a popup so users can view it. Inputs on this code by user and clicking 
+on submit would redirect the user to the oogo search page with the same filters entered on the popup*/
+
 import React, { Component } from "react";
 import "./App.css";
 import DatePicker from "react-datepicker";
@@ -92,6 +96,7 @@ class App extends Component {
                     width='220'
                     height='80'
                 />
+
                 <h1 className='popup-title'>Book a Minder</h1>
                 <h2 className='popup-subtitle'>Filters: </h2>
                 <div className='oogo-form'>
