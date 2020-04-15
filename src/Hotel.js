@@ -8,11 +8,7 @@ import './css/font-awesome.min.css';
 import './css/responsive.css';
 import './css/style.css';
 
-
-
-
-
-
+//dummy hotel website 
 class Hotel extends Component {
     render()
     {

@@ -15,6 +15,7 @@ class App extends Component {
         this.handleChange = this.handleChange.bind(this);
     }
 
+    //function to handle filters 
     async handleChange(event) {
         const { name, value, type } = event.target;
         if (type === "checkbox") {
@@ -36,6 +37,7 @@ class App extends Component {
         }
     }
 
+    //building search string for oogo website 
     updateQueryString() {
         let queryString = "";
         if (this.state.pub_category.length !== 0)
@@ -47,6 +49,7 @@ class App extends Component {
         });
     }
 
+    //pop up form 
     render() {
         return (
             <div className='popup-container'>
