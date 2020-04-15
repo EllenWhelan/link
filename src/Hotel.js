@@ -1,3 +1,9 @@
+/* This file contains the code for the structure of the fake hotel site. Based on the design of 
+actual hotel sites, it is used to demonstrate how the popup would function by placing a button on the
+page which would trigger the popup if the user presses it. Here the user fills in the details needed
+for their booking and presses submit. Here , they are redirected to the  official oogo search page.
+Note: the user may need an oogo account to access the oogo search page.  */
+
 import React, { Component } from "react";
 import Popup from "reactjs-popup";
 import App from './App';
@@ -8,20 +14,18 @@ import './css/font-awesome.min.css';
 import './css/responsive.css';
 import './css/style.css';
 
-//dummy hotel website 
+datepicker
 class Hotel extends Component {
     render()
     {
         return(
-            <div>
-            
-            
-	<header className="header_area">
+<div>
+    <header className="header_area">
 		<div className="top_menu row m0">
 			<div className="container">
 				<div className="float-left">
 					<ul className="list header_social">
-						<li><a href="#">Contact Us +11 (111) 1111111</a></li>
+						<li><a href=" ">Contact Us +11 (111) 1111111</a></li>
 					</ul>
 				</div>
 				<div className="float-right">
@@ -57,7 +61,7 @@ class Hotel extends Component {
 							<li className="nav-item active"><a className="nav-link" href="about-us.html">Booking</a></li>
 							<li className="nav-item"><a className="nav-link" href="gallery.html">Gallery</a></li>
 							<li className="nav-item submenu dropdown">
-								<a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								<a href=" " className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Pages</a>
 								<ul className="dropdown-menu">
 									<li className="nav-item"><a className="nav-link" href="elements.html">Elements</a></li>
@@ -65,7 +69,7 @@ class Hotel extends Component {
 								</ul>
 							</li>
 							<li className="nav-item submenu dropdown">
-								<a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								<a href=" " className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Blog</a>
 								<ul className="dropdown-menu">
 									<li className="nav-item"><a className="nav-link" href="blog.html">Blog</a></li>
@@ -109,7 +113,7 @@ class Hotel extends Component {
 						<div >
 							<p>
 								We see you have children who will be staying with you. Do you wish to 
-                                book a child-minder? Click below if so
+                                book a child-minder? Click the button below if so
 							</p>
 						</div>
 						
@@ -127,6 +131,7 @@ class Hotel extends Component {
 			<div className="testi-slider owl-carousel" data-slider-id="1">
 				<div className="item">
 					<div className="testi-item">
+					{/* The popup is added here using App.js and a popup library*/}
 					<Popup trigger={<button className ="button" > Book Minder </button>}
                          modal
                         closeOnDocumentClick>
@@ -134,11 +139,11 @@ class Hotel extends Component {
                         </Popup>
 						<h4>Fanny Spencer</h4>
 						<ul className="list">
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
 						</ul>
 						<div className="wow fadeIn" data-wow-duration="1s">
 							<p>
@@ -151,13 +156,13 @@ class Hotel extends Component {
 				</div>
 				<div className="item">
 					<div className="testi-item">
-						<h4>Fanny Spencer</h4>
+						<h4>Ciaran Layton</h4>
 						<ul className="list">
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
 						</ul>
 						<div className="wow fadeIn" data-wow-duration="1s">
 							<p>
@@ -170,13 +175,13 @@ class Hotel extends Component {
 				</div>
 				<div className="item">
 					<div className="testi-item">
-						<h4>Fanny Spencer</h4>
+						<h4>Harry Hugo</h4>
 						<ul className="list">
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
-							<li><a href="#"><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
+							<li><a href=" "><i className="fa fa-star"></i></a></li>
 						</ul>
 						<div className="wow fadeIn" data-wow-duration="1s">
 							<p>
@@ -223,7 +228,7 @@ class Hotel extends Component {
 			<div className="row">
 				<div className="col-lg-3  col-md-6 col-sm-6">
 					<div className="single-footer-widget">
-						<h6>About Agency</h6>
+						<h6>About Us</h6>
 						<p>
 							The world has become so fasted that people don’t want to standby reading page of info they would much rather
 							look at a presentation and understand message.
@@ -235,18 +240,18 @@ class Hotel extends Component {
 						<h6>Quick Links</h6>
 						<div className="row">
 							<ul className="col footer-nav">
-								<li><a href="#">Sitemaps</a></li>
-								<li><a href="#">Categories</a></li>
-								<li><a href="#">Archives</a></li>
-								<li><a href="#">Advertise</a></li>
-								<li><a href="#">Ad Choice</a></li>
+								<li><a href=" ">Sitemaps</a></li>
+								<li><a href=" ">Categories</a></li>
+								<li><a href=" ">Archives</a></li>
+								<li><a href=" ">Advertise</a></li>
+								<li><a href=" ">Ad Choice</a></li>
 							</ul>
 							<ul className="col footer-nav">
-								<li><a href="#">Privacy Policy</a></li>
-								<li><a href="#">Terms of Use</a></li>
-								<li><a href="#">Help Center</a></li>
-								<li><a href="#">Newsletters</a></li>
-								<li><a href="#">Feedback</a></li>
+								<li><a href=" ">Privacy Policy</a></li>
+								<li><a href=" ">Terms of Use</a></li>
+								<li><a href=" ">Help Center</a></li>
+								<li><a href=" ">Newsletters</a></li>
+								<li><a href=" ">Feedback</a></li>
 							</ul>
 						</div>
 					</div>
@@ -255,7 +260,7 @@ class Hotel extends Component {
 				<div className="col-lg-3  col-md-6 col-sm-6">
 					<div className="single-footer-widget">
 						<h6>Newsletter</h6>
-						<p>For business professionals caught between high OEM price mediocre print and graphic.</p>
+						<p>Subscribe to our weekly newspaper by entering your email below</p>
 						<div className="" id="mc_embed_signup">
 
 							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
@@ -290,25 +295,7 @@ class Hotel extends Component {
 		</div>
 	</footer>
 	
-	<script src="js/jquery.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-	<script src="vendors/lightbox/simpleLightbox.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope.pkgd.min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="js/owl-carousel-thumb.min.js"></script>
-	<script src="vendors/popup/jquery.magnific-popup.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-	<script src="vendors/counter-up/jquery.counterup.js"></script>
-	<script src="js/mail-script.js"></script>
-	<script src="js/theme.js"></script>
-            </div>
+</div>
         );
 
     }

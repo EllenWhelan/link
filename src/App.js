@@ -1,10 +1,24 @@
+/* This javascript file contains the code used for the oogo hotel popup. A partnering hotel would place 
+this on their website in the form of a popup so users can view it. Inputs on this code by user and clicking 
+on submit would redirect the user to the oogo search page with the same filters entered on the popup*/
+
 import React, { Component } from "react";
 import "./App.css";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
+var today = new Date();
 
 class App extends Component {
     constructor() {
         super();
         this.state = {
+            startDateStart: new Date(),
+            startDateEnd: new Date(
+                today.getFullYear(),
+                today.getMonth(),
+                today.getDate() + 7
+            ),
             location: window.location.href.substr(23),
             filters: [],
             pub_filters: "",
@@ -13,9 +27,32 @@ class App extends Component {
             url: window.location.href,
         };
         this.handleChange = this.handleChange.bind(this);
+        this.handleChangeDateStart = this.handleChangeDateStart.bind(this);
+        this.handleChangeDateEnd = this.handleChangeDateEnd.bind(this);
     }
 
+
     //function to handle filters 
+
+    handleChangeDateStart = (date) => {
+        this.setState(
+            {
+                startDateStart: date,
+            },
+            () => this.updateQueryString()
+        );
+    };
+
+    handleChangeDateEnd = (date) => {
+        this.setState(
+            {
+                startDateEnd: date,
+            },
+            () => this.updateQueryString()
+        );
+    };
+
+
     async handleChange(event) {
         const { name, value, type } = event.target;
         if (type === "checkbox") {
@@ -37,13 +74,20 @@ class App extends Component {
         }
     }
 
-    //building search string for oogo website 
+
+    /* Adds to the url when event occurs to account for all changes */
+
     updateQueryString() {
         let queryString = "";
         if (this.state.pub_category.length !== 0)
             queryString += `pub_category=${this.state.pub_category}&`;
         if (this.state.pub_filters.length !== 0)
-            queryString += `pub_filters=${this.state.pub_filters}`;
+            queryString += `pub_filters=${this.state.pub_filters}&`;
+        queryString += `dates=${this.state.startDateStart
+            .toISOString()
+            .slice(0, 10)}%2C${this.state.startDateEnd
+            .toISOString()
+            .slice(0, 10)}`;
         this.setState({
             queryString: queryString,
         });
@@ -60,6 +104,10 @@ class App extends Component {
                     width='220'
                     height='80'
                 />
+
+                {/* Here the checkboxes are created for each of the filters. More than one can be picked.
+                Note: The filters here may not match the ones on the actual website if the official ones
+                are changed*/}
                 <h1 className='popup-title'>Book a Minder</h1>
                 <h2 className='popup-subtitle'>Filters: </h2>
                 <div className='oogo-form'>
@@ -163,6 +211,9 @@ class App extends Component {
                         </div>
                     </div>
 
+                    {/* here a dropdown menu is added so the user can pick a category. Only
+                    one can be picked at a time*/}
+
                     <h2 className='popup-subtitle'>Category: </h2>
                     <div className='select-container'>
                         <select
@@ -184,6 +235,26 @@ class App extends Component {
                         </select>
                     </div>
 
+                    <br />
+
+                    {/* Here, the datepicker is added. By default, the From date is today 
+                    and the To date is one week from now */ }
+
+                    <h2 className='popup-subtitle'>Date: </h2>
+                    <br />
+                    <h3 style={{ color: "purple" }}>From:</h3>
+                    <DatePicker
+                        selected={this.state.startDateStart}
+                        onChange={this.handleChangeDateStart}
+                    />
+                    <h3 style={{ color: "purple" }}>To:</h3>
+                    <DatePicker
+                        selected={this.state.startDateEnd}
+                        onChange={this.handleChangeDateEnd}
+                    />
+                    
+                    {/* Here the submit is added, when pressed, directs the user to the oogo website 
+                    search page plus the inputs made in the url*/}
                     <div className='button-container'>
                         <button className='submit-button'>Cancel</button>
                         <a
