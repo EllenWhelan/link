@@ -130,6 +130,7 @@ class Hotel extends Component {
 			<div className="testi-slider owl-carousel" data-slider-id="1">
 				<div className="item">
 					<div className="testi-item">
+					{/* The popup is added here using App.js and a popup library*/}
 					<Popup trigger={<button className ="button" > Book Minder </button>}
                          modal
                         closeOnDocumentClick>

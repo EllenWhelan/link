@@ -70,6 +70,7 @@ class App extends Component {
         }
     }
 
+    /* Adds to the url when event occurs to account for all changes */
     updateQueryString() {
         let queryString = "";
         if (this.state.pub_category.length !== 0)
@@ -97,6 +98,9 @@ class App extends Component {
                     height='80'
                 />
 
+                {/* Here the checkboxes are created for each of the filters. More than one can be picked.
+                Note: The filters here may not match the ones on the actual website if the official ones
+                are changed*/}
                 <h1 className='popup-title'>Book a Minder</h1>
                 <h2 className='popup-subtitle'>Filters: </h2>
                 <div className='oogo-form'>
@@ -200,6 +204,9 @@ class App extends Component {
                         </div>
                     </div>
 
+                    {/* here a dropdown menu is added so the user can pick a category. Only
+                    one can be picked at a time*/}
+
                     <h2 className='popup-subtitle'>Category: </h2>
                     <div className='select-container'>
                         <select
@@ -222,6 +229,10 @@ class App extends Component {
                     </div>
 
                     <br />
+
+                    {/* Here, the datepicker is added. By default, the From date is today 
+                    and the To date is one week from now */ }
+
                     <h2 className='popup-subtitle'>Date: </h2>
                     <br />
                     <h3 style={{ color: "purple" }}>From:</h3>
@@ -234,7 +245,9 @@ class App extends Component {
                         selected={this.state.startDateEnd}
                         onChange={this.handleChangeDateEnd}
                     />
-
+                    
+                    {/* Here the submit is added, when pressed, directs the user to the oogo website 
+                    search page plus the inputs made in the url*/}
                     <div className='button-container'>
                         <button className='submit-button'>Cancel</button>
                         <a
