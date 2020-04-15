@@ -14,7 +14,6 @@ import './css/font-awesome.min.css';
 import './css/responsive.css';
 import './css/style.css';
 
-datepicker
 class Hotel extends Component {
     render()
     {
